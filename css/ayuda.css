@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root {
+    scroll-behavior: smooth;
+    --color: #e8ebedd7;
+    --nav-footer: #0d1821;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 500px;
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.nav {
+    height: 50px;
+    background-image: linear-gradient(#212529e5, #212529d7);
+    background-size: cover;
+    background-position: center;
+    padding: 8px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: flex-end;
+    align-content: center;
+}
+
+.nav__link {
+    color: var(--color);
+    font-weight: 200;
+    text-decoration: none;
+    margin: 3px 2px;
+    transform: translateY(20%);
+    transition: transform .6s
+}
+
+.nav__link:hover {
+    border-bottom: 3px solid #7c9bf1;
+    color: white;
+    transform: translate(0)
+}
+
+.nav__link {
+    color: var(--color);
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    background-image: linear-gradient(#00000055, #090909eb), url('../img/fondo-formulario.jpg');
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    object-fit: cover;
+    top: 50px;
+}
+
+.main__form {
+    display: flex;
+    position: relative;
+    top: 70px;
+    width: 750px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.form__content {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form__content>h1 {
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+}
+
+.form__content>h2 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form__content>label {
+    position: relative;
+    left: 50px;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    text-align: start;
+}
+
+.form__content>input {
+    width: 400px;
+    height: 35px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: .7px solid rgba(0, 0, 0, 0.466);
+}
+
+.form__content>textarea {
+    width: 400px;
+    height: 150px;
+    border-radius: 5px;
+    border: .7px solid rgba(0, 0, 0, 0.466);
+}
+
+.form__content>button {
+    background-color: #6C63FF;
+    color: #fff;
+    font-weight: 100px;
+    position: relative;
+    top: 20px;
+    display: block;
+    padding: 10px;
+    width: 250px;
+    border: transparent;
+    border-radius: 10px;
+}
+
+.form__content>button:hover {
+    background-color: #ff6584;
+    color: #fff;
+}
+
+.form__img {
+    width: 200px;
+    height: 500px;
+    position: relative;
+    bottom: 45px;
+
+}
